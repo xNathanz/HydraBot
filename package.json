@@ -1,0 +1,18 @@
+{
+  "name": "hydra",
+  "version": "1.0.0",
+  "description": "Discord Bot.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "xNathanz - xNathanz#3092",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2"
+  }
+}
