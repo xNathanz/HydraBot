@@ -9,11 +9,11 @@
   <a href="https://www.patreon.com/hatred2k">
     <img src="https://img.shields.io/badge/Support-Me-yellow.svg" alt="Support me">
   </a>
-  <a href="https://discord.js.org/#/">
-    <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" alt="Made with JavaScript">
-  </a>
   <a href="https://Discord.js.org">
       <img src="https://img.shields.io/badge/discord-js-blue.svg" alt="Discord.js.org">
+  </a>
+   <a href="https://discord.js.org/#/">
+    <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" alt="Made with JavaScript">
   </a>
 </p>
 
