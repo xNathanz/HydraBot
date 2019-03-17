@@ -14,7 +14,7 @@
   </a>
 </p>
 
-Wolverine is a fully functional discord bot.
+Hydra is a fully functional discord bot.
 
 # Installation
 * [Windows]()
