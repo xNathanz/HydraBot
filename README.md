@@ -1,4 +1,4 @@
-![intro](https://cdn.discordapp.com/attachments/237581365170667520/556873166950105098/Untitled-1.jpg)
+![intro](https://hatred2k.com/assets/hydra.jpg)
 
 # Hydra - A multipurpose discord bot made by xNathanz.
 <h4 align="center">Moderation, utility, and much more!</h4>
