@@ -4,8 +4,9 @@ const moment = require('moment');
 module.exports = {
 	name: 'info',
 	description: 'Display the current servers information.',
+	usage: '',
 	// eslint-disable-next-line no-unused-vars
-	execute(message, client, args, user) {
+	execute(message, args) {
 		const servericon = message.guild.iconURL;
 		const serverEmbed = new Discord.RichEmbed()
 			.setColor('#0099ff')
@@ -18,5 +19,6 @@ module.exports = {
 			.setThumbnail(servericon)
 			.setFooter(`ID: ${message.member.client.user.id} | Bot Created - ${moment(message.member.client.user.createdAt).format('DD/MM/YYYY')}`, (servericon));
 		message.channel.send(serverEmbed);
+
 	},
 };

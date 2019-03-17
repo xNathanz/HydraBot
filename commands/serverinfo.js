@@ -1,12 +1,11 @@
-/* eslint-disable no-undef */
 const Discord = require('discord.js');
 const moment = require('moment');
 
 module.exports = {
 	name: 'serverinfo',
 	description: 'Display the current servers information.',
-	// eslint-disable-next-line no-unused-vars
-	execute(message, client, args, user) {
+	usage: '',
+	execute(message) {
 		const servericon = message.guild.iconURL;
 		const serverEmbed = new Discord.RichEmbed()
 			.setColor('#0099ff')
