@@ -13,8 +13,8 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-	client.user.setActivity('!help | Hydra');
-	console.log('Bot online on:', client.guilds.size, 'Guilds, With', `${client.guilds.reduce((m, g) => m += g.memberCount, 0)}`, 'Users.');
+	client.user.setPresence({ game: { name: '!help | Hydra', type: 'streaming', url: 'https://www.twitch.tv/runez' } }); 	console.log(`Client Logged in as: ${client.user.tag} with the ID: ${client.user.id}`);
+	console.log(`| Client Guilds: ${client.guilds.size} | Client Users: ${client.guilds.reduce((m, g) => m += g.memberCount, 0)} Users. |`);
 	console.log('Invite Link: https://discordapp.com/api/oauth2/authorize?client_id=556167152055353364&scope=bot&permissions=8');
 });
 
