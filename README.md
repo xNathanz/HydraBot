@@ -1,4 +1,4 @@
-![intro](https://discordapp.com/channels/@me/237581365170667520/556576705989574676)
+![intro](https://imgur.com/cvRpxqT)
 
 # Hydra - A multipurpose discord bot made by xNathanz.
 <h4 align="center">Moderation, utility, and much more!</h4>
@@ -25,7 +25,7 @@ Wolverine is a fully functional discord bot.
 
 # Support
 
-We are here to help you with any issues you may have! Simply join our [discord](https://discord.gg/Shqnv7H), and we will gladly assist you.
+I am new to coding and i'm learning as i go, If you have any issues please join my Discord so i can help you further.
 
 # License
 
