@@ -9,11 +9,11 @@ module.exports = {
 		const servericon = message.guild.iconURL;
 		const serverEmbed = new Discord.RichEmbed()
 			.setColor('#0099ff')
-			.setTitle('Server Information')
+			.setTitle(`${message.guild.name}`)
 			.setURL('https://discord.gg/TWxeQGx')
-			.setDescription('Hydra Multipurpose Bot')
 			.addField('Owner', `${message.guild.owner}`, true)
 			.addField('Total Users', `${message.guild.members.filter(m => m.presence.status !== 'offline').size} / ${message.guild.memberCount}`, true)
+			.addField('Bots', `${message.guild.members.filter(b => b.user.bot).size}`, true)
 			.addField('Server Region', `${message.guild.region}`, true)
 			.addField('Roles', `${message.guild.roles.size}`, true)
 			.addField('Text Channels', `${message.guild.channels.filter(c => c.type === 'text').size}`, true)

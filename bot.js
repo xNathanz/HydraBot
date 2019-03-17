@@ -13,7 +13,15 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-	console.log('Ready!');
+	client.user.setActivity('!help | Hydra');
+	console.log('Bot online on:', client.guilds.size, 'Guilds, With', `${client.guilds.reduce((m, g) => m += g.memberCount, 0)}`, 'Users.');
+	console.log('Invite Link: https://discordapp.com/api/oauth2/authorize?client_id=556167152055353364&scope=bot&permissions=8');
+});
+
+client.on('guildMemberAdd', member => {
+	const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+	if (!channel) return;
+	channel.send(`${member} : ${member.id} - Joined`);
 });
 
 client.on('message', message => {
@@ -32,7 +40,6 @@ client.on('message', message => {
 		message.reply('There was an error trying to execute that command!');
 	}
 
-	// do the same for the rest of the commands...
 });
 
 client.login(token);
