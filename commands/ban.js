@@ -5,7 +5,7 @@ module.exports = {
 	name: 'ban',
 	description: 'Ban a server from the server',
 	usage: '<@user> <reason>',
-	execute(message, args) {
+	exec: async (message, args) => {
 		const bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 		const bReason = args.slice(1).join(' ');
 		if (!message.member.hasPermission('BAN_MEMBERS')) {

@@ -1,32 +1,16 @@
-const Discord = require('discord.js');
-const fs = require('fs');
+const prefixes = require('../prefixes');
+const globalPrefix = require('../bot.js');
 
 module.exports = {
 	name: 'setprefix',
 	description: 'Set the prefix of the server!',
-	execute(message, args) {
-		if (!message.member.hasPermission('MANAGE_GUILD')) {
-			const hEmbed = new Discord.RichEmbed()
-				.setColor('#c40404')
-				.addDescription('Permission Denied!');
-			message.channel.send(hEmbed);
+	exec: async (message, args) => {
+		if (args.length) {
+			prefixes.set(message.guild.id, args[0]);
+			return message.channel.send(`Successfully set prefix to \`${args[0]}\``);
 		}
-		if(!args[0] || args[0 == 'help']) return message.reply('Usage: !prefix <prefix here>');
 
-		const prefixes = JSON.parse(fs.readFileSync('../prefixes.json', 'utf8'));
+		return message.channel.send(`Prefix is \`${prefixes.get(message.guild.id) || globalPrefix}\``);
 
-		prefixes[message.guild.id] = {
-			prefixes: args[0],
-		};
-
-		fs.writeFile('../prefixes.json', JSON.stringify(prefixes), (err) => {
-			if (err) console.log(err);
-		});
-
-		const sEmbed = new Discord.RichEmbed()
-			.setColor('#8e0f08')
-			.setTitle('Prefix Set!')
-			.setDescription(`Set to ${args[0]}`);
-		message.channel.send(sEmbed);
 	},
 };

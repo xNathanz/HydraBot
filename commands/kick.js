@@ -5,7 +5,7 @@ module.exports = {
 	name: 'kick',
 	description: 'Kick a server from the server',
 	usage: '<@user> <reason>',
-	execute(message, args) {
+	exec: async (message, args) => {
 		// Always fetch members when dealing with permission. MEMBERS =  Guild , USERS = Discord.
 		const kUser = message.mentions.members.first() || message.guild.members.get(args[0]);
 		const kReason = args.slice(1).join(' ');

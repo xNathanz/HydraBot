@@ -5,7 +5,7 @@ module.exports = {
 	name: 'announce',
 	description: 'Announcement for the server',
 	usage: '<title message>, <description>, <link of title>, <main image>, <footer image>, <Field Title>, <field>',
-	execute(message) {
+	exec: async (message) => {
 		const rest_of_the_string = message.content.slice('!announce'.length);
 		const array_of_arguments = rest_of_the_string.split(',');
 		const embed = new Discord.RichEmbed()

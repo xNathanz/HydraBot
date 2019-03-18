@@ -5,7 +5,7 @@ module.exports = {
 	name: 'serverinfo',
 	description: 'Display the current servers information.',
 	usage: '',
-	execute(message) {
+	exec: async (message) => {
 		const servericon = message.guild.iconURL;
 		const serverEmbed = new Discord.RichEmbed()
 			.setColor('#0099ff')

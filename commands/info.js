@@ -6,7 +6,7 @@ module.exports = {
 	description: 'Display the current servers information.',
 	usage: '',
 	// eslint-disable-next-line no-unused-vars
-	execute(message, args) {
+	exec: async (message, args) => {
 		const servericon = message.guild.iconURL;
 		const serverEmbed = new Discord.RichEmbed()
 			.setColor('#0099ff')
