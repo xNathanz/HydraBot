@@ -6,9 +6,6 @@
   <a href="https://discord.gg/TWxeQGx">
     <img src="https://discordapp.com/api/guilds/556510395150499850/widget.png?style=shield" alt="Discord Server">
   </a>
-  <a href="https://www.patreon.com/hatred2k">
-    <img src="https://img.shields.io/badge/Support-Me-yellow.svg" alt="Support me">
-  </a>
   <a href="https://Discord.js.org">
       <img src="https://img.shields.io/badge/discord-js-blue.svg" alt="Discord.js.org">
   </a>
@@ -17,7 +14,7 @@
   </a>
 </p>
 
-Wolverine is a fully functional discord bot.
+Hydra is a fully functional discord bot.
 
 # Installation
 * [Windows]()
