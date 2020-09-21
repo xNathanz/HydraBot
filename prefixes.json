@@ -1,3 +1,4 @@
 {
-    
+    "json-usage": "don't use json",
+    "why": "it can get corrupted"
 }
